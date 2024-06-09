@@ -18,3 +18,4 @@ jobs:
           echo -n ${{ secrets.GITHUB_TOKEN }} | podman login ghcr.io -u ${{ github.actor }} --password-stdin
           ls -l .
           podman build -t ghcr.io/mossman1215/journeys-mastodon:latest .
+          podman push ghcr.io/mossman1215/journeys-mastodon:latest 
