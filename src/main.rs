@@ -1,6 +1,6 @@
 use std::{collections::HashMap, env, fs::File, io::{BufReader, Read}, ops::Sub, process, str::FromStr, sync::Arc};
 use std::time::{Duration, SystemTime};
-use chrono::{DateTime, Local, NaiveTime, TimeDelta};
+use chrono::{DateTime, FixedOffset, Local, NaiveDateTime, NaiveTime, TimeDelta, TimeZone};
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
 
@@ -11,7 +11,7 @@ struct Auth {
 
 #[tokio::main]
 async fn main() {
-    println!("Hello, world!");
+    println!("Checking for crashes");
     let mut auth_token = Auth {
         access_token: "".to_string(),
     };
@@ -38,7 +38,9 @@ async fn main() {
     if  now-lastupdate>duration{
         for feature in delays["features"].as_array().unwrap() {
             let desc = feature["properties"].as_object().unwrap()["EventDescription"].as_str().unwrap();
-            if desc == "Crash"{
+            let last_edit_time = NaiveDateTime::parse_from_str( feature["properties"].as_object().unwrap()["LastEdited"].as_str().unwrap(),"%Y-%m-%d %H:%M:%S").unwrap();
+            let last_edit_stamp = TimeDelta::new(last_edit_time.and_local_timezone(FixedOffset::east_opt(12*3600).unwrap()).unwrap().timestamp(),0).unwrap();
+            if desc == "Crash"&& now - last_edit_stamp>duration{
             let message = format!("{}\n{}\n{}\n{}",
                 feature["properties"].as_object().unwrap()["Name"].as_str().unwrap(),
                 feature["properties"].as_object().unwrap()["LocationArea"].as_str().unwrap(),
