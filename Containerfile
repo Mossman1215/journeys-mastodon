@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-COPY ./target/release/journeys-mastodon /bin/
+COPY ./target/x86_64-unknown-linux-musl/release/journeys-mastodon /bin/
 
 ENTRYPOINT [ "/bin/journeys-mastodon" ]
 
