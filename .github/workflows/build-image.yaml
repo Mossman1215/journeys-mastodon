@@ -16,4 +16,5 @@ jobs:
           rustup target add x86_64-unknown-linux-musl
           cargo build --target x86_64-unknown-linux-musl --release
           echo -n ${{ secrets.GITHUB_TOKEN }} | podman login ghcr.io -u ${{ github.actor }} --password-stdin
+          ls -l .
           podman build -t ghcr.io/mossman1215/journeys-mastodon:latest .
