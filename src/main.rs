@@ -47,7 +47,7 @@ async fn main() {
                 let mut highway_hash = String::from_str("").unwrap();
                 match m {
                     None => println!("no highway type found"),
-                    Some(m) => highway_hash = String::from_str("#").unwrap()+m.as_str(),
+                    Some(m) => highway_hash = (String::from_str("#").unwrap()+m.as_str()).replace(" ", ""),
                 }
                 let message = format!("{}\n{}\n{}\n{}\n{}",
                     feature["properties"].as_object().unwrap()["Name"].as_str().unwrap(),
