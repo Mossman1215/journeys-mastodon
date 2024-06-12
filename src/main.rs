@@ -37,12 +37,12 @@ async fn main() {
     let duration = TimeDelta::new(300, 0).unwrap();
     let re = Regex::new(r"SH\s[0-9]+").unwrap();
     //if now sub lastupdated > 300 check for closures with matching properties
-    if  now-lastupdate>duration{
+    if  now-lastupdate<duration{
         for feature in delays["features"].as_array().unwrap() {
             let desc = feature["properties"].as_object().unwrap()["EventDescription"].as_str().unwrap();
             let last_edit_time = NaiveDateTime::parse_from_str( feature["properties"].as_object().unwrap()["LastEdited"].as_str().unwrap(),"%Y-%m-%d %H:%M:%S").unwrap();
             let last_edit_stamp = TimeDelta::new(last_edit_time.and_local_timezone(FixedOffset::east_opt(12*3600).unwrap()).unwrap().timestamp(),0).unwrap();
-            if desc == "Crash"&& now - last_edit_stamp>duration {
+            if desc == "Crash"&& now - last_edit_stamp<duration {
                 let m = re.find(feature["properties"].as_object().unwrap()["LocationArea"].as_str().unwrap());
                 let mut highway_hash = String::from_str("").unwrap();
                 match m {
