@@ -49,7 +49,7 @@ async fn main() {
                     None => println!("no highway type found"),
                     Some(m) => highway_hash = (String::from_str("#").unwrap()+m.as_str()).replace(" ", ""),
                 }
-                let message = format!("{}\n{}\n{}\n{}\n{}",
+                let message = format!("{}\nArea: {}\n{}\nLast Updated: {}\n{}",
                     feature["properties"].as_object().unwrap()["Name"].as_str().unwrap(),
                     feature["properties"].as_object().unwrap()["LocationArea"].as_str().unwrap(),
                     feature["properties"].as_object().unwrap()["EventComments"].as_str().unwrap(),
