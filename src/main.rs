@@ -1,6 +1,7 @@
 use std::{collections::HashMap, env, fs::File, io::{BufReader, Read}, ops::Sub, process, str::FromStr, sync::Arc};
 use std::time::{Duration, SystemTime};
 use chrono::{DateTime, FixedOffset, Local, NaiveDateTime, NaiveTime, TimeDelta, TimeZone};
+use geojson::{Feature, FeatureCollection, GeoJson};
 use regex::Regex;
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
@@ -98,16 +99,28 @@ fn regex_capture() {
     let mut file = File::open("fixtures/delays.json").expect("should pass");
     let mut data = String::new();
     file.read_to_string(&mut data).unwrap();
-    let delays: Value = serde_json::from_str(&data).expect("parse failed");
-    let test_event = delays["features"].as_array().unwrap()[4].clone();
-    assert_eq!(test_event["properties"].as_object().unwrap()["LocationArea"].as_str().unwrap(),"SH 2 Kaitoke to Featherston (Remutaka Hill)");
-    assert_eq!(test_event["properties"].as_object().unwrap()["EventDescription"].as_str().unwrap(),"Crash");
+    let geojson = data.as_str().parse::<GeoJson>().unwrap();
+    let delays = FeatureCollection::try_from(geojson).unwrap();
+    let test_event = delays.features[4].clone();
+    assert_eq!(test_event.property("LocationArea").unwrap(),"SH 2 Kaitoke to Featherston (Remutaka Hill)");
+    assert_eq!(test_event.property("EventDescription").unwrap(),"Crash");
     let re = Regex::new(r"SH\s[0-9]+").unwrap();
-    let m = re.find(test_event["properties"].as_object().unwrap()["LocationArea"].as_str().unwrap());
+    let m = re.find(test_event.property("LocationArea").unwrap().as_str().unwrap());
     let mut highway_hash = "";
     match m {
         None => println!("no highway type found"),
         Some(m) => highway_hash = m.as_str(),
     }
     assert_eq!(highway_hash,"SH 2")
+}
+
+#[test]
+fn parse_regions() {
+    let mut file = File::open("Data/NZ_Regions_LocalGovt.geojson").expect("should pass");
+    let mut data = String::new();
+    file.read_to_string(&mut data).unwrap();
+    let geojson = data.as_str().parse::<GeoJson>().unwrap();
+    let regions = FeatureCollection::try_from(geojson).unwrap();
+    assert_eq!(regions.features.len(),17);
+    assert_eq!(regions.features[8].property("REGC2023_1").unwrap(),"Wellington Region")
 }
