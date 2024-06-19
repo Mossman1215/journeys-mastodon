@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 COPY ./Data/NZ_Regions_LocalGovt.geojson /Data/NZ_Regions_LocalGovt.geojson
-COPY ./target/x86_64-unknown-linux-musl/release/journeys-mastodon /Data/NZ_Regions_LocalGovt.geojson
+COPY ./target/x86_64-unknown-linux-musl/release/journeys-mastodon /bin/journeys-mastodon
 
 ENTRYPOINT [ "/bin/journeys-mastodon" ]
 
