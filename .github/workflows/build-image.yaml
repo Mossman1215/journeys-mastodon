@@ -11,7 +11,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - run: |
+      - name: test
+        run: |
+          sudo apt-get -y install musl-dev musl-tools 
+          rustup target add x86_64-unknown-linux-musl
+          cargo test
+      - name: build & push
+        run: |
           sudo apt-get -y install musl-dev musl-tools 
           rustup target add x86_64-unknown-linux-musl
           cargo build --target x86_64-unknown-linux-musl --release
