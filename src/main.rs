@@ -1,4 +1,4 @@
-use std::{collections::HashMap, env, fs::File, io::{BufReader, Read}, ops::Sub, process, str::FromStr, sync::Arc};
+use std::{collections::HashMap, env, fs::File, io::{BufReader, Read}, ops::Sub, process, str::FromStr, string, sync::Arc};
 use std::time::{Duration, SystemTime};
 use chrono::{DateTime, FixedOffset, Local, NaiveDateTime, NaiveTime, TimeDelta, TimeZone};
 use geojson::{Feature, FeatureCollection, GeoJson};
@@ -30,8 +30,14 @@ async fn main() {
     let dt1: DateTime<Local> = Local::now();
     let now = TimeDelta::new(dt1.timestamp(),0).unwrap();
     let resp = reqwest::get("https://www.journeys.nzta.govt.nz/assets/map-data-cache/delays.json")
-        .await.unwrap().text().await.expect("failed to fetch nzta data");
+        .await.unwrap().text().await.expect("failed to fetch nzta delays data");
     let delays: Value = serde_json::from_str(&resp).expect("parse failed");
+
+    let resp_region = reqwest::get("https://www.journeys.nzta.govt.nz/assets/map-data-cache/regions.json")
+        .await.unwrap().text().await.expect("failed to fetch nzta regions data");
+    let geojson_region = resp_region.as_str().parse::<GeoJson>().unwrap();
+    let regions = FeatureCollection::try_from(geojson_region).unwrap();
+
     //Duration::new(900, 0);
     //Duration::new(lastUpdated)
     let lastupdate = TimeDelta::new(delays["lastUpdated"].as_i64().unwrap(),0).unwrap();
@@ -44,12 +50,28 @@ async fn main() {
             let last_edit_time = NaiveDateTime::parse_from_str( feature["properties"].as_object().unwrap()["LastEdited"].as_str().unwrap(),"%Y-%m-%d %H:%M:%S").unwrap();
             let last_edit_stamp = TimeDelta::new(last_edit_time.and_local_timezone(FixedOffset::east_opt(12*3600).unwrap()).unwrap().timestamp(),0).unwrap();
             let last_update_stamp = TimeDelta::new(feature["properties"].as_object().unwrap()["lastUpdated"].as_i64().unwrap(), 0).unwrap();
+            let regions_raw = feature["properties"].as_object().unwrap()["regions"].as_array().unwrap();
+            let mut regions_delay  = Vec::with_capacity(regions_raw.capacity());
+            if regions_delay.len() > 0 {
+                for i in 0..regions_raw.len() {
+                    regions_delay[i]=regions_raw[i].as_i64().unwrap_or_default()
+                }
+            }
             if desc == "Crash" && now - last_edit_stamp<duration && now - last_update_stamp<duration{
                 let m = re.find(feature["properties"].as_object().unwrap()["LocationArea"].as_str().unwrap());
                 let mut highway_hash = String::from_str("").unwrap();
                 match m {
                     None => println!("no highway type found"),
                     Some(m) => highway_hash = (String::from_str("#").unwrap()+m.as_str()).replace(" ", ""),
+                }
+                let mut region_hash = String::new();
+                if regions_delay.len() > 0 {
+                    for region in  regions.features.as_slice(){
+                        if regions_delay.contains(&region.property("id").unwrap().as_i64().unwrap_or_default()) {
+                            let region_str = format!("#{} ",region.property("name").unwrap().as_str().unwrap());
+                            region_hash.push_str(region_str.as_str());
+                        }
+                    }
                 }
                 let message = format!("{}\n{}\nLast Updated: {}\n{}",
                     feature["properties"].as_object().unwrap()["Name"].as_str().unwrap(),
@@ -61,7 +83,7 @@ async fn main() {
                 println!("sending message to mastodon");
                 map.insert("status", message.as_str());
                 map.insert("visibility", "public");
-
+                // println!("prospective message: {}\n",message);
                 let client = reqwest::Client::new();
                 let res2 = client.post("https://g2s.mountainmoss.nz/api/v1/statuses")
                     .bearer_auth(auth_token.access_token.clone())
