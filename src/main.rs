@@ -51,11 +51,9 @@ async fn main() {
             let last_edit_stamp = TimeDelta::new(last_edit_time.and_local_timezone(FixedOffset::east_opt(12*3600).unwrap()).unwrap().timestamp(),0).unwrap();
             let last_update_stamp = TimeDelta::new(feature["properties"].as_object().unwrap()["lastUpdated"].as_i64().unwrap(), 0).unwrap();
             let regions_raw = feature["properties"].as_object().unwrap()["regions"].as_array().unwrap();
-            let mut regions_delay  = Vec::with_capacity(regions_raw.capacity());
-            if regions_delay.len() > 0 {
-                for i in 0..regions_raw.len() {
-                    regions_delay[i]=regions_raw[i].as_i64().unwrap_or_default()
-                }
+            let mut regions_delay  = Vec::new();
+            for i in 0..regions_raw.len() {
+                regions_delay.push(regions_raw[i].as_i64().unwrap_or_default());
             }
             if desc == "Crash" && now - last_edit_stamp<duration && now - last_update_stamp<duration{
                 let m = re.find(feature["properties"].as_object().unwrap()["LocationArea"].as_str().unwrap());
@@ -73,17 +71,17 @@ async fn main() {
                         }
                     }
                 }
-                let message = format!("{}\n{}\nLast Updated: {}\n{}",
+                let message = format!("{}\n{}\nLast Updated: {}\n{} {}",
                     feature["properties"].as_object().unwrap()["Name"].as_str().unwrap(),
                     feature["properties"].as_object().unwrap()["EventComments"].as_str().unwrap(),
                     feature["properties"].as_object().unwrap()["LastUpdatedNice"].as_str().unwrap(),
-                    highway_hash
+                    highway_hash,
+                    region_hash
                 );
                 let mut map = HashMap::new();
                 println!("sending message to mastodon");
                 map.insert("status", message.as_str());
                 map.insert("visibility", "public");
-                // println!("prospective message: {}\n",message);
                 let client = reqwest::Client::new();
                 let res2 = client.post("https://g2s.mountainmoss.nz/api/v1/statuses")
                     .bearer_auth(auth_token.access_token.clone())
