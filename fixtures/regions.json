@@ -1,0 +1,1853 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 37,
+                "name": "Northland",
+                "slug": "northland",
+                "uniq": "Region-37",
+                "type": "region",
+                "tasId": "1",
+                "links": [
+                    {
+                        "label": "Planned roadworks",
+                        "url": "https:\/\/www.nzta.govt.nz\/northland-state-highway-maintenance-programme\/",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "road-works-outline"
+                    },
+                    {
+                        "label": "Facebook",
+                        "url": "https:\/\/www.facebook.com\/nztanorthland",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "facebook-outline"
+                    },
+                    {
+                        "label": "X (Twitter)",
+                        "url": "https:\/\/twitter.com\/nztaaklnth",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "twitter-outline"
+                    },
+                    {
+                        "label": "Traffic news bulletins",
+                        "url": "https:\/\/www.journeys.nzta.govt.nz\/traffic-bulletins?Region=Northland",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "holiday-journeys"
+                    }
+                ],
+                "config": {
+                    "enableHolidayJourneys": 0,
+                    "enableTrafficDashboard": 0,
+                    "hideHolidaysInMap": 1,
+                    "hideRoadworksInMap": 0,
+                    "hideRoadClosuresInMap": 0,
+                    "hideWarningsInMap": 0,
+                    "hideHazardsInMap": 0,
+                    "hideEventsInMap": 0,
+                    "hideNewsInMap": 0
+                },
+                "bannerConfig": {
+                    "useManualBannerEvent": 0,
+                    "bannerEventTitle": null,
+                    "bannerEventImpact": null,
+                    "bannerEventURL": null,
+                    "bannerEventID": 0
+                },
+                "parentRegion": "northland",
+                "parentRegionId": "1",
+                "weatherLocation": "Whangarei",
+                "publishedPage": true
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            175.198974609375,
+                            -35.77325759103724
+                        ],
+                        [
+                            174.02069091796875,
+                            -36.500805317604794
+                        ],
+                        [
+                            173.0072021484375,
+                            -35.18278813800227
+                        ],
+                        [
+                            172.584228515625,
+                            -34.415973384481866
+                        ],
+                        [
+                            173.001708984375,
+                            -34.30714385628803
+                        ],
+                        [
+                            174.056396484375,
+                            -34.921971036163754
+                        ],
+                        [
+                            175.198974609375,
+                            -35.77325759103724
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 7,
+                "name": "Auckland",
+                "slug": "auckland",
+                "uniq": "Region-7",
+                "type": "region",
+                "tasId": "2",
+                "links": [
+                    {
+                        "label": "Traffic news bulletins",
+                        "url": "https:\/\/www.journeys.nzta.govt.nz\/traffic-bulletins?Region=Auckland",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "holiday-journeys"
+                    },
+                    {
+                        "label": "Auckland Transport Journey Planner ",
+                        "url": "https:\/\/at.govt.nz\/bus-train-ferry\/journey-planner",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "public-transport"
+                    },
+                    {
+                        "label": "Facebook",
+                        "url": "https:\/\/www.facebook.com\/nztaakl",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "facebook-outline"
+                    },
+                    {
+                        "label": "X (Twitter)",
+                        "url": "https:\/\/x.com\/nztaaklnth",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "twitter-outline"
+                    }
+                ],
+                "config": {
+                    "enableHolidayJourneys": 0,
+                    "enableTrafficDashboard": 1,
+                    "hideHolidaysInMap": 1,
+                    "hideRoadworksInMap": 0,
+                    "hideRoadClosuresInMap": 0,
+                    "hideWarningsInMap": 0,
+                    "hideHazardsInMap": 0,
+                    "hideEventsInMap": 0,
+                    "hideNewsInMap": 0
+                },
+                "bannerConfig": {
+                    "useManualBannerEvent": 0,
+                    "bannerEventTitle": null,
+                    "bannerEventImpact": null,
+                    "bannerEventURL": null,
+                    "bannerEventID": 0
+                },
+                "parentRegion": "northland",
+                "parentRegionId": "1",
+                "weatherLocation": "Auckland",
+                "publishedPage": true
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            174.6441650390625,
+                            -37.29372052022868
+                        ],
+                        [
+                            174.034423828125,
+                            -36.47872381162464
+                        ],
+                        [
+                            175.1165771484375,
+                            -35.79108281624991
+                        ],
+                        [
+                            175.94879150390625,
+                            -36.3151251474805
+                        ],
+                        [
+                            175.242919921875,
+                            -36.4013889848486
+                        ],
+                        [
+                            175.41595458984375,
+                            -37.03544721652363
+                        ],
+                        [
+                            175.15777587890625,
+                            -37.02229110771148
+                        ],
+                        [
+                            175.16326904296875,
+                            -37.18821967018366
+                        ],
+                        [
+                            174.6441650390625,
+                            -37.29372052022868
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 10,
+                "name": "Waikato",
+                "slug": "waikato",
+                "uniq": "Region-10",
+                "type": "region",
+                "tasId": "3",
+                "links": [
+                    {
+                        "label": "Planned roadworks",
+                        "url": "https:\/\/www.journeys.nzta.govt.nz\/regions\/waikato\/roadworks",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "road-works-outline"
+                    },
+                    {
+                        "label": "Traffic dashboard",
+                        "url": "\/regions\/waikato\/traffic-dashboard",
+                        "isSpaRoute": true,
+                        "isExtRoute": false,
+                        "icon": "dashboard"
+                    },
+                    {
+                        "label": "Facebook",
+                        "url": "https:\/\/www.facebook.com\/nztawbop",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "facebook-outline"
+                    },
+                    {
+                        "label": "Traffic news bulletins",
+                        "url": "https:\/\/www.journeys.nzta.govt.nz\/traffic-bulletins?Region=Waikato",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "holiday-journeys"
+                    },
+                    {
+                        "label": "X (Twitter)",
+                        "url": "https:\/\/x.com\/nztawbop",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "twitter-outline"
+                    }
+                ],
+                "config": {
+                    "enableHolidayJourneys": 0,
+                    "enableTrafficDashboard": 0,
+                    "hideHolidaysInMap": 1,
+                    "hideRoadworksInMap": 0,
+                    "hideRoadClosuresInMap": 0,
+                    "hideWarningsInMap": 0,
+                    "hideHazardsInMap": 0,
+                    "hideEventsInMap": 0,
+                    "hideNewsInMap": 0
+                },
+                "bannerConfig": {
+                    "useManualBannerEvent": 0,
+                    "bannerEventTitle": "Communications outages in some regions are resulting in delays to updates on road closures being posted. We will provide updates as soon as reliable information is available. Zoom in to the map to you see the latest available closures and area warnings.",
+                    "bannerEventImpact": "Closures and delays",
+                    "bannerEventURL": null,
+                    "bannerEventID": 0
+                },
+                "parentRegion": "northland",
+                "parentRegionId": "1",
+                "weatherLocation": "Hamilton",
+                "publishedPage": true
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            176.13693237304688,
+                            -39.11514470090146
+                        ],
+                        [
+                            175.79086303710938,
+                            -39.32579941789297
+                        ],
+                        [
+                            175.53817749023438,
+                            -39.283293868938486
+                        ],
+                        [
+                            175.517578125,
+                            -38.99784130750071
+                        ],
+                        [
+                            175.506591796875,
+                            -38.60399327559167
+                        ],
+                        [
+                            174.84603881835938,
+                            -38.779781378049165
+                        ],
+                        [
+                            174.5947265625,
+                            -38.721947632928085
+                        ],
+                        [
+                            174.62493896484375,
+                            -37.27405280997905
+                        ],
+                        [
+                            175.13031005859375,
+                            -37.164694188702214
+                        ],
+                        [
+                            175.14678955078125,
+                            -37.00474608481476
+                        ],
+                        [
+                            175.396728515625,
+                            -37.020098201368114
+                        ],
+                        [
+                            175.25390624999997,
+                            -36.4091259352967
+                        ],
+                        [
+                            175.869140625,
+                            -36.47430675509521
+                        ],
+                        [
+                            176.00097656249997,
+                            -37.35269280367274
+                        ],
+                        [
+                            175.84716796875,
+                            -37.5924715110191
+                        ],
+                        [
+                            176.12731933593747,
+                            -38.13455657705412
+                        ],
+                        [
+                            176.5228271484375,
+                            -38.38903340675903
+                        ],
+                        [
+                            176.48025512695312,
+                            -38.54064682206033
+                        ],
+                        [
+                            176.26327514648438,
+                            -38.80761054235758
+                        ],
+                        [
+                            176.26876831054688,
+                            -38.951933381186144
+                        ],
+                        [
+                            176.13693237304688,
+                            -39.11514470090146
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 11,
+                "name": "Bay of Plenty",
+                "slug": "bay-of-plenty",
+                "uniq": "Region-11",
+                "type": "region",
+                "tasId": "4",
+                "links": [
+                    {
+                        "label": "Planned roadworks",
+                        "url": "\/regions\/bay-of-plenty\/roadworks",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "road-works-outline"
+                    },
+                    {
+                        "label": "Traffic dashboard",
+                        "url": "\/regions\/bay-of-plenty\/traffic-dashboard",
+                        "isSpaRoute": true,
+                        "isExtRoute": false,
+                        "icon": "dashboard"
+                    },
+                    {
+                        "label": "X (Twitter)",
+                        "url": "https:\/\/twitter.com\/nztawbop",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "twitter-outline"
+                    },
+                    {
+                        "label": "Facebook",
+                        "url": "https:\/\/www.facebook.com\/nztawbop",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "facebook-outline"
+                    },
+                    {
+                        "label": "Traffic news bulletins",
+                        "url": "https:\/\/www.journeys.nzta.govt.nz\/traffic-bulletins?Region=Bay%20of%20Plenty",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "holiday-journeys"
+                    }
+                ],
+                "config": {
+                    "enableHolidayJourneys": 0,
+                    "enableTrafficDashboard": 0,
+                    "hideHolidaysInMap": 1,
+                    "hideRoadworksInMap": 0,
+                    "hideRoadClosuresInMap": 0,
+                    "hideWarningsInMap": 0,
+                    "hideHazardsInMap": 0,
+                    "hideEventsInMap": 0,
+                    "hideNewsInMap": 0
+                },
+                "bannerConfig": {
+                    "useManualBannerEvent": 0,
+                    "bannerEventTitle": "Communications outages in some regions are resulting in delays to updates on road closures being posted. We will provide updates as soon as reliable information is available. Zoom in to the map to you see the latest available closures and area warnings.",
+                    "bannerEventImpact": "Closures and delays",
+                    "bannerEventURL": null,
+                    "bannerEventID": 0
+                },
+                "parentRegion": "northland",
+                "parentRegionId": "1",
+                "weatherLocation": "Tauranga",
+                "publishedPage": true
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            176.42120361328125,
+                            -39.031986028740064
+                        ],
+                        [
+                            176.25469207763672,
+                            -38.89370499941828
+                        ],
+                        [
+                            176.24164581298828,
+                            -38.81269354270865
+                        ],
+                        [
+                            176.48162841796878,
+                            -38.42562182814217
+                        ],
+                        [
+                            176.04492187500003,
+                            -38.201496974020806
+                        ],
+                        [
+                            175.76202392578125,
+                            -37.53205444534623
+                        ],
+                        [
+                            175.93505859375,
+                            -37.3319485736073
+                        ],
+                        [
+                            176.22070312499997,
+                            -37.212831514455935
+                        ],
+                        [
+                            178.08940887451172,
+                            -37.538043909071625
+                        ],
+                        [
+                            178.10820579528806,
+                            -37.59852412336969
+                        ],
+                        [
+                            178.07670593261716,
+                            -37.760401362297166
+                        ],
+                        [
+                            177.86727905273438,
+                            -38.1334763895322
+                        ],
+                        [
+                            177.74642944335938,
+                            -38.0729603768343
+                        ],
+                        [
+                            177.27195739746094,
+                            -38.528293128359664
+                        ],
+                        [
+                            176.42120361328125,
+                            -39.031986028740064
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 13,
+                "name": "Hawke\u2019s Bay",
+                "slug": "hawkes-bay",
+                "uniq": "Region-13",
+                "type": "region",
+                "tasId": "6",
+                "links": [
+                    {
+                        "label": "Traffic dashboard",
+                        "url": "\/regions\/hawkes-bay\/traffic-dashboard",
+                        "isSpaRoute": true,
+                        "isExtRoute": false,
+                        "icon": "dashboard"
+                    },
+                    {
+                        "label": "Facebook",
+                        "url": "https:\/\/www.facebook.com\/nztahbg",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "facebook-outline"
+                    },
+                    {
+                        "label": "X (Twitter)",
+                        "url": "https:\/\/twitter.com\/nztacni",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "twitter-outline"
+                    },
+                    {
+                        "label": "Traffic news bulletins",
+                        "url": "https:\/\/www.journeys.nzta.govt.nz\/traffic-bulletins?Region=Hawke%E2%80%99s%20Bay",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "holiday-journeys"
+                    }
+                ],
+                "config": {
+                    "enableHolidayJourneys": 0,
+                    "enableTrafficDashboard": 0,
+                    "hideHolidaysInMap": 1,
+                    "hideRoadworksInMap": 0,
+                    "hideRoadClosuresInMap": 0,
+                    "hideWarningsInMap": 0,
+                    "hideHazardsInMap": 0,
+                    "hideEventsInMap": 0,
+                    "hideNewsInMap": 0
+                },
+                "bannerConfig": {
+                    "useManualBannerEvent": 0,
+                    "bannerEventTitle": "Communications outages in some regions are resulting in delays to updates on road closures being posted. We will provide updates as soon as reliable information is available. Zoom in to the map to you see the latest available closures and area warnings.",
+                    "bannerEventImpact": "Closures and delays",
+                    "bannerEventURL": null,
+                    "bannerEventID": 0
+                },
+                "parentRegion": "northland",
+                "parentRegionId": "1",
+                "weatherLocation": "Napier",
+                "publishedPage": true
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            176.396484375,
+                            -40.40513069752788
+                        ],
+                        [
+                            176.09298706054688,
+                            -40.0055277591605
+                        ],
+                        [
+                            176.02569580078125,
+                            -39.068246728525246
+                        ],
+                        [
+                            176.231689453125,
+                            -38.87606680031535
+                        ],
+                        [
+                            177.110595703125,
+                            -38.56749535882732
+                        ],
+                        [
+                            177.45117187499997,
+                            -38.61901643727864
+                        ],
+                        [
+                            178.077392578125,
+                            -39.1428424780625
+                        ],
+                        [
+                            176.66015625,
+                            -40.4511272658723
+                        ],
+                        [
+                            176.396484375,
+                            -40.40513069752788
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 14,
+                "name": "Taranaki",
+                "slug": "taranaki",
+                "uniq": "Region-14",
+                "type": "region",
+                "tasId": "7",
+                "links": [
+                    {
+                        "label": "Planned roadworks",
+                        "url": "https:\/\/www.nzta.govt.nz\/roads-and-rail\/management-and-maintenance\/highway-maintenance\/taranaki-region",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "cameras"
+                    },
+                    {
+                        "label": "Traffic dashboard",
+                        "url": "\/regions\/taranaki\/traffic-dashboard",
+                        "isSpaRoute": true,
+                        "isExtRoute": false,
+                        "icon": "dashboard"
+                    },
+                    {
+                        "label": "X (Twitter)",
+                        "url": "https:\/\/twitter.com\/nztacni",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "twitter-outline"
+                    },
+                    {
+                        "label": "Facebook",
+                        "url": "https:\/\/www.facebook.com\/nztamwt",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "facebook-outline"
+                    },
+                    {
+                        "label": "Traffic news bulletins",
+                        "url": "https:\/\/www.journeys.nzta.govt.nz\/traffic-bulletins?Region=Taranaki",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "holiday-journeys"
+                    }
+                ],
+                "config": {
+                    "enableHolidayJourneys": 0,
+                    "enableTrafficDashboard": 0,
+                    "hideHolidaysInMap": 1,
+                    "hideRoadworksInMap": 0,
+                    "hideRoadClosuresInMap": 0,
+                    "hideWarningsInMap": 0,
+                    "hideHazardsInMap": 0,
+                    "hideEventsInMap": 0,
+                    "hideNewsInMap": 0
+                },
+                "bannerConfig": {
+                    "useManualBannerEvent": 0,
+                    "bannerEventTitle": "Communications outages in some regions are resulting in delays to updates on road closures being posted. We will provide updates as soon as reliable information is available. Zoom in to the map to you see the latest available closures and area warnings.",
+                    "bannerEventImpact": "Closures and delays",
+                    "bannerEventURL": null,
+                    "bannerEventID": 0
+                },
+                "parentRegion": "northland",
+                "parentRegionId": "1",
+                "weatherLocation": "New Plymouth",
+                "publishedPage": true
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            175.07537841796875,
+                            -39.60357204197879
+                        ],
+                        [
+                            174.74853515625,
+                            -39.89287990029478
+                        ],
+                        [
+                            174.6331787109375,
+                            -39.86758762451018
+                        ],
+                        [
+                            173.92181396484375,
+                            -39.5474708687794
+                        ],
+                        [
+                            173.74191284179685,
+                            -39.374648881600685
+                        ],
+                        [
+                            173.75015258789062,
+                            -39.19501252187821
+                        ],
+                        [
+                            174.61371502684426,
+                            -38.71001344399411
+                        ],
+                        [
+                            174.86801147460938,
+                            -38.76746885907017
+                        ],
+                        [
+                            174.71282958984375,
+                            -39.16627055008069
+                        ],
+                        [
+                            175.07537841796875,
+                            -39.60357204197879
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 12,
+                "name": "Gisborne",
+                "slug": "gisborne",
+                "uniq": "Region-12",
+                "type": "region",
+                "tasId": "5",
+                "links": [
+                    {
+                        "label": "Facebook",
+                        "url": "https:\/\/www.facebook.com\/nztahbg",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "facebook-outline"
+                    },
+                    {
+                        "label": "X (Twitter)",
+                        "url": "https:\/\/twitter.com\/nztacni",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "twitter-outline"
+                    },
+                    {
+                        "label": "Traffic news bulletins",
+                        "url": "https:\/\/www.journeys.nzta.govt.nz\/traffic-bulletins?Region=Gisborne",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "holiday-journeys"
+                    }
+                ],
+                "config": {
+                    "enableHolidayJourneys": 0,
+                    "enableTrafficDashboard": 0,
+                    "hideHolidaysInMap": 1,
+                    "hideRoadworksInMap": 0,
+                    "hideRoadClosuresInMap": 0,
+                    "hideWarningsInMap": 0,
+                    "hideHazardsInMap": 0,
+                    "hideEventsInMap": 0,
+                    "hideNewsInMap": 0
+                },
+                "bannerConfig": {
+                    "useManualBannerEvent": 0,
+                    "bannerEventTitle": "Communications outages in some regions are resulting in delays to updates on road closures being posted. We will provide updates as soon as reliable information is available. Zoom in to the map to you see the latest available closures and area warnings.",
+                    "bannerEventImpact": "Closures and delays",
+                    "bannerEventURL": null,
+                    "bannerEventID": 0
+                },
+                "parentRegion": "northland",
+                "parentRegionId": "1",
+                "weatherLocation": "Gisborne",
+                "publishedPage": true
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            177.65716552734375,
+                            -38.909201619824366
+                        ],
+                        [
+                            177.10922241210935,
+                            -38.58789354020368
+                        ],
+                        [
+                            177.220458984375,
+                            -38.42347008084991
+                        ],
+                        [
+                            177.41134643554688,
+                            -38.321188264532196
+                        ],
+                        [
+                            177.67913818359375,
+                            -37.993998198369574
+                        ],
+                        [
+                            177.8521728515625,
+                            -38.10538590283809
+                        ],
+                        [
+                            177.97164916992188,
+                            -37.78265474565738
+                        ],
+                        [
+                            177.97576904296875,
+                            -37.600088201563494
+                        ],
+                        [
+                            178.09558868408206,
+                            -37.591111305666445
+                        ],
+                        [
+                            178.07498931884768,
+                            -37.52824271797506
+                        ],
+                        [
+                            178.3252716064453,
+                            -37.526881339563914
+                        ],
+                        [
+                            178.5772705078125,
+                            -37.64903402157864
+                        ],
+                        [
+                            178.36853027343753,
+                            -38.475094320502436
+                        ],
+                        [
+                            177.9174041748047,
+                            -38.98076276501631
+                        ],
+                        [
+                            177.65716552734375,
+                            -38.909201619824366
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 15,
+                "name": "Manawat\u016b-Whanganui",
+                "slug": "manawatu-whanganui",
+                "uniq": "Region-15",
+                "type": "region",
+                "tasId": "8",
+                "links": [
+                    {
+                        "label": "Traffic dashboard",
+                        "url": "\/regions\/manawatu-whanganui\/traffic-dashboard",
+                        "isSpaRoute": true,
+                        "isExtRoute": false,
+                        "icon": "dashboard"
+                    },
+                    {
+                        "label": "X (Twitter)",
+                        "url": "https:\/\/twitter.com\/nztacni",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "twitter-outline"
+                    },
+                    {
+                        "label": "Facebook",
+                        "url": "https:\/\/www.facebook.com\/nztamwt",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "facebook-outline"
+                    },
+                    {
+                        "label": "Traffic news bulletins",
+                        "url": "https:\/\/www.journeys.nzta.govt.nz\/traffic-bulletins?Region=Manawat%C5%AB-Whanganui",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "holiday-journeys"
+                    }
+                ],
+                "config": {
+                    "enableHolidayJourneys": 0,
+                    "enableTrafficDashboard": 0,
+                    "hideHolidaysInMap": 1,
+                    "hideRoadworksInMap": 0,
+                    "hideRoadClosuresInMap": 0,
+                    "hideWarningsInMap": 0,
+                    "hideHazardsInMap": 0,
+                    "hideEventsInMap": 0,
+                    "hideNewsInMap": 0
+                },
+                "bannerConfig": {
+                    "useManualBannerEvent": 0,
+                    "bannerEventTitle": "Communications outages in some regions are resulting in delays to updates on road closures being posted. We will provide updates as soon as reliable information is available. Zoom in to the map to you see the latest available closures and area warnings.",
+                    "bannerEventImpact": "Closures and delays",
+                    "bannerEventURL": null,
+                    "bannerEventID": 0
+                },
+                "parentRegion": "None",
+                "parentRegionId": null,
+                "weatherLocation": "Palmerston North",
+                "publishedPage": true
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            175.5402374267578,
+                            -40.74569634433955
+                        ],
+                        [
+                            175.26351928710938,
+                            -40.77430186363721
+                        ],
+                        [
+                            175.18661499023438,
+                            -40.757660149970306
+                        ],
+                        [
+                            175.18790245056152,
+                            -40.74231487869751
+                        ],
+                        [
+                            175.20360946655273,
+                            -40.73164913017891
+                        ],
+                        [
+                            175.1227569580078,
+                            -40.69938133866612
+                        ],
+                        [
+                            174.75265502929688,
+                            -39.86758762451018
+                        ],
+                        [
+                            174.96688842773438,
+                            -39.55276537183102
+                        ],
+                        [
+                            174.63523864746094,
+                            -39.14497262511222
+                        ],
+                        [
+                            174.825439453125,
+                            -38.758366935612784
+                        ],
+                        [
+                            175.1275634765625,
+                            -38.53957267203904
+                        ],
+                        [
+                            175.62744140624997,
+                            -38.448211304132634
+                        ],
+                        [
+                            175.74554443359375,
+                            -39.28223089949211
+                        ],
+                        [
+                            176.08062744140622,
+                            -39.02345139405933
+                        ],
+                        [
+                            176.22344970703125,
+                            -39.49980216233287
+                        ],
+                        [
+                            176.15753173828122,
+                            -39.991851471423466
+                        ],
+                        [
+                            176.3800048828125,
+                            -40.094882122321145
+                        ],
+                        [
+                            176.4129638671875,
+                            -40.35491675079059
+                        ],
+                        [
+                            176.715087890625,
+                            -40.44276659332212
+                        ],
+                        [
+                            176.40747070312497,
+                            -40.73477098967239
+                        ],
+                        [
+                            176.209716796875,
+                            -40.68480366159125
+                        ],
+                        [
+                            175.770263671875,
+                            -40.80965166748854
+                        ],
+                        [
+                            175.5402374267578,
+                            -40.74569634433955
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 16,
+                "name": "Wellington",
+                "slug": "wellington",
+                "uniq": "Region-16",
+                "type": "region",
+                "tasId": "9",
+                "links": [
+                    {
+                        "label": "Planned roadworks",
+                        "url": "\/regions\/wellington\/wellington-roadworks",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "road-works-outline"
+                    },
+                    {
+                        "label": "Traffic dashboard",
+                        "url": "\/regions\/wellington\/traffic-dashboard",
+                        "isSpaRoute": true,
+                        "isExtRoute": false,
+                        "icon": "dashboard"
+                    },
+                    {
+                        "label": "X (Twitter)",
+                        "url": "https:\/\/twitter.com\/nztawgtn",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "twitter-outline"
+                    },
+                    {
+                        "label": "Facebook",
+                        "url": "https:\/\/www.facebook.com\/nztawgtn",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "facebook-outline"
+                    },
+                    {
+                        "label": "Metlink",
+                        "url": "https:\/\/www.metlink.org.nz\/",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "public-transport"
+                    },
+                    {
+                        "label": "Traffic news bulletins",
+                        "url": "https:\/\/www.journeys.nzta.govt.nz\/traffic-bulletins?Region=Wellington",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "holiday-journeys"
+                    }
+                ],
+                "config": {
+                    "enableHolidayJourneys": 1,
+                    "enableTrafficDashboard": 0,
+                    "hideHolidaysInMap": 1,
+                    "hideRoadworksInMap": 0,
+                    "hideRoadClosuresInMap": 0,
+                    "hideWarningsInMap": 0,
+                    "hideHazardsInMap": 0,
+                    "hideEventsInMap": 0,
+                    "hideNewsInMap": 0
+                },
+                "bannerConfig": {
+                    "useManualBannerEvent": 0,
+                    "bannerEventTitle": "Communications outages in some regions are resulting in delays to updates on road closures being posted. We will provide updates as soon as reliable information is available. Zoom in to the map to you see the latest available closures and area warnings.",
+                    "bannerEventImpact": "Closures and delays",
+                    "bannerEventURL": null,
+                    "bannerEventID": 0
+                },
+                "parentRegion": "northland",
+                "parentRegionId": "1",
+                "weatherLocation": "Wellington",
+                "publishedPage": true
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            174.5356750488281,
+                            -41.297928442806935
+                        ],
+                        [
+                            174.869384765625,
+                            -40.826280356677124
+                        ],
+                        [
+                            175.12327194213867,
+                            -40.69521661351714
+                        ],
+                        [
+                            175.2051544189453,
+                            -40.719680645172396
+                        ],
+                        [
+                            175.20429611206055,
+                            -40.757790179509335
+                        ],
+                        [
+                            175.47088623046872,
+                            -40.68792771802359
+                        ],
+                        [
+                            175.61370849609375,
+                            -40.74413568925235
+                        ],
+                        [
+                            175.72769165039062,
+                            -40.669181182828936
+                        ],
+                        [
+                            175.81283569335938,
+                            -40.713955826286046
+                        ],
+                        [
+                            175.79498291015625,
+                            -40.764941412468495
+                        ],
+                        [
+                            176.21109008789062,
+                            -40.6473035625225
+                        ],
+                        [
+                            176.36764526367188,
+                            -40.70666898117328
+                        ],
+                        [
+                            176.06414794921872,
+                            -41.19312307571869
+                        ],
+                        [
+                            175.352783203125,
+                            -41.672911819602085
+                        ],
+                        [
+                            174.5356750488281,
+                            -41.297928442806935
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 17,
+                "name": "Tasman",
+                "slug": "tasman",
+                "uniq": "Region-17",
+                "type": "region",
+                "tasId": null,
+                "links": [
+                    {
+                        "label": "X (Twitter)",
+                        "url": "https:\/\/twitter.com\/nztantm",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "twitter-outline"
+                    },
+                    {
+                        "label": "Facebook",
+                        "url": "https:\/\/www.facebook.com\/nztantm",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "facebook-outline"
+                    },
+                    {
+                        "label": "Travel news bulletins",
+                        "url": "https:\/\/www.journeys.nzta.govt.nz\/traffic-bulletins?Region=Tasman",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "cameras"
+                    },
+                    {
+                        "label": "Traffic news bulletins",
+                        "url": "https:\/\/www.journeys.nzta.govt.nz\/traffic-bulletins?Region=Tasman",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "holiday-journeys"
+                    }
+                ],
+                "config": {
+                    "enableHolidayJourneys": 0,
+                    "enableTrafficDashboard": 0,
+                    "hideHolidaysInMap": 1,
+                    "hideRoadworksInMap": 0,
+                    "hideRoadClosuresInMap": 0,
+                    "hideWarningsInMap": 0,
+                    "hideHazardsInMap": 0,
+                    "hideEventsInMap": 0,
+                    "hideNewsInMap": 0
+                },
+                "bannerConfig": {
+                    "useManualBannerEvent": 0,
+                    "bannerEventTitle": null,
+                    "bannerEventImpact": null,
+                    "bannerEventURL": null,
+                    "bannerEventID": 0
+                },
+                "parentRegion": "None",
+                "parentRegionId": "1",
+                "weatherLocation": "Motueka",
+                "publishedPage": true
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            172.188720703125,
+                            -40.76390128094587
+                        ],
+                        [
+                            172.672119140625,
+                            -41.19932314127607
+                        ],
+                        [
+                            172.0843505859375,
+                            -41.79179268262891
+                        ],
+                        [
+                            172.00469970703125,
+                            -42.07172346681077
+                        ],
+                        [
+                            172.4578857421875,
+                            -42.3524549195262
+                        ],
+                        [
+                            173.30108642578125,
+                            -41.52914198872309
+                        ],
+                        [
+                            173.309326171875,
+                            -41.407715867702834
+                        ],
+                        [
+                            173.18984985351562,
+                            -41.32423243125432
+                        ],
+                        [
+                            173.03741455078125,
+                            -40.628545606365854
+                        ],
+                        [
+                            173.11706542968747,
+                            -40.549287249082035
+                        ],
+                        [
+                            172.67486572265625,
+                            -40.46366632458767
+                        ],
+                        [
+                            172.188720703125,
+                            -40.76390128094587
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 18,
+                "name": "Nelson and Marlborough",
+                "slug": "nelson-and-marlborough",
+                "uniq": "Region-18",
+                "type": "region",
+                "tasId": "10",
+                "links": [
+                    {
+                        "label": "X (Twitter)",
+                        "url": "https:\/\/twitter.com\/nztantm",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "twitter-outline"
+                    },
+                    {
+                        "label": "Facebook",
+                        "url": "https:\/\/www.facebook.com\/nztantm",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "facebook-outline"
+                    },
+                    {
+                        "label": "Traffic news bulletins",
+                        "url": "https:\/\/www.journeys.nzta.govt.nz\/traffic-bulletins?Region=Nelson%20and%20Marlborough",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "holiday-journeys"
+                    }
+                ],
+                "config": {
+                    "enableHolidayJourneys": 0,
+                    "enableTrafficDashboard": 0,
+                    "hideHolidaysInMap": 1,
+                    "hideRoadworksInMap": 0,
+                    "hideRoadClosuresInMap": 0,
+                    "hideWarningsInMap": 0,
+                    "hideHazardsInMap": 0,
+                    "hideEventsInMap": 0,
+                    "hideNewsInMap": 0
+                },
+                "bannerConfig": {
+                    "useManualBannerEvent": 0,
+                    "bannerEventTitle": "Many local roads across the Marlborough region were severely damaged by a significant storm event. View the current status of local roads.",
+                    "bannerEventImpact": "Marlborough region",
+                    "bannerEventURL": "https:\/\/marlborough.maps.arcgis.com\/apps\/webappviewer\/index.html?id=7de480b8bfa541e0a73719bfc893c41d",
+                    "bannerEventID": 0
+                },
+                "parentRegion": "northland",
+                "parentRegionId": "1",
+                "weatherLocation": "Nelson",
+                "publishedPage": true
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            173.741912,
+                            -41.954383
+                        ],
+                        [
+                            174.059143,
+                            -41.980931
+                        ],
+                        [
+                            174.336547,
+                            -41.72623
+                        ],
+                        [
+                            174.473876,
+                            -41.013065
+                        ],
+                        [
+                            173.50708,
+                            -40.398856
+                        ],
+                        [
+                            173.163757,
+                            -41.30876
+                        ],
+                        [
+                            173.284606,
+                            -41.397415
+                        ],
+                        [
+                            172.919311,
+                            -41.740577
+                        ],
+                        [
+                            172.666625,
+                            -42.134894
+                        ],
+                        [
+                            173.07312,
+                            -42.51665
+                        ],
+                        [
+                            173.741912,
+                            -41.954383
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 20,
+                "name": "West Coast",
+                "slug": "west-coast",
+                "uniq": "Region-20",
+                "type": "region",
+                "tasId": "12",
+                "links": [
+                    {
+                        "label": "X (Twitter)",
+                        "url": "https:\/\/twitter.com\/nztacwc",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "twitter-outline"
+                    },
+                    {
+                        "label": "Facebook",
+                        "url": "https:\/\/www.facebook.com\/nztacwc",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "facebook-outline"
+                    },
+                    {
+                        "label": "Traffic news bulletins",
+                        "url": "https:\/\/www.journeys.nzta.govt.nz\/traffic-bulletins?Region=West%20Coast",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "holiday-journeys"
+                    }
+                ],
+                "config": {
+                    "enableHolidayJourneys": 0,
+                    "enableTrafficDashboard": 0,
+                    "hideHolidaysInMap": 1,
+                    "hideRoadworksInMap": 0,
+                    "hideRoadClosuresInMap": 0,
+                    "hideWarningsInMap": 0,
+                    "hideHazardsInMap": 0,
+                    "hideEventsInMap": 0,
+                    "hideNewsInMap": 0
+                },
+                "bannerConfig": {
+                    "useManualBannerEvent": 0,
+                    "bannerEventTitle": "With the Ed Sheeran Concerts, Warbirds over Wanaka and other holiday traffic expect delays wherever you go across the South Island this Easter weekend. Allow plenty of time \u2013 plan ahead and make your journey part of the fun.",
+                    "bannerEventImpact": "Easter Weekend",
+                    "bannerEventURL": "http:\/\/www.journeys.nzta.govt.nz\/christchurch\/traffic-update\/698536",
+                    "bannerEventID": 0
+                },
+                "parentRegion": "northland",
+                "parentRegionId": "1",
+                "weatherLocation": "Greymouth",
+                "publishedPage": true
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            169.7003173828125,
+                            -43.97305156068593
+                        ],
+                        [
+                            168.3819580078125,
+                            -44.53567453241317
+                        ],
+                        [
+                            167.8326416015625,
+                            -44.24126379833977
+                        ],
+                        [
+                            170.562744140625,
+                            -42.90413649491734
+                        ],
+                        [
+                            172.1282958984375,
+                            -40.6723059714534
+                        ],
+                        [
+                            172.7105712890625,
+                            -41.19518982948958
+                        ],
+                        [
+                            172.122802734375,
+                            -41.79179268262891
+                        ],
+                        [
+                            172.2216796875,
+                            -42.10229818948117
+                        ],
+                        [
+                            172.5347900390625,
+                            -42.29559582449642
+                        ],
+                        [
+                            171.55992675058732,
+                            -42.906232180271545
+                        ],
+                        [
+                            169.7003173828125,
+                            -43.97305156068593
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 21,
+                "name": "Canterbury",
+                "slug": "canterbury",
+                "uniq": "Region-21",
+                "type": "region",
+                "tasId": "11",
+                "links": [
+                    {
+                        "label": "Christchurch city planned roadworks",
+                        "url": "https:\/\/www.ccc.govt.nz\/transport\/travel-safety-and-travel-updates\/traffic-updates\/",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "road-works-outline"
+                    },
+                    {
+                        "label": "Traffic dashboard - Christchurch",
+                        "url": "\/regions\/canterbury\/traffic-dashboard",
+                        "isSpaRoute": true,
+                        "isExtRoute": false,
+                        "icon": "dashboard"
+                    },
+                    {
+                        "label": "X (Twitter)",
+                        "url": "https:\/\/twitter.com\/nztacwc",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "twitter-outline"
+                    },
+                    {
+                        "label": "Facebook",
+                        "url": "https:\/\/www.facebook.com\/nztacwc",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "facebook-outline"
+                    },
+                    {
+                        "label": "Metro",
+                        "url": "https:\/\/www.metroinfo.co.nz",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "public-transport"
+                    },
+                    {
+                        "label": "Traffic news bulletins",
+                        "url": "https:\/\/www.journeys.nzta.govt.nz\/traffic-bulletins?Region=Canterbury",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "holiday-journeys"
+                    }
+                ],
+                "config": {
+                    "enableHolidayJourneys": 0,
+                    "enableTrafficDashboard": 0,
+                    "hideHolidaysInMap": 1,
+                    "hideRoadworksInMap": 0,
+                    "hideRoadClosuresInMap": 0,
+                    "hideWarningsInMap": 0,
+                    "hideHazardsInMap": 0,
+                    "hideEventsInMap": 0,
+                    "hideNewsInMap": 0
+                },
+                "bannerConfig": {
+                    "useManualBannerEvent": 0,
+                    "bannerEventTitle": null,
+                    "bannerEventImpact": null,
+                    "bannerEventURL": null,
+                    "bannerEventID": 0
+                },
+                "parentRegion": "None",
+                "parentRegionId": "1",
+                "weatherLocation": "Christchurch",
+                "publishedPage": true
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            171.13952636718753,
+                            -44.97257068224063
+                        ],
+                        [
+                            170.8154296875,
+                            -44.902577996288855
+                        ],
+                        [
+                            170.3485107421875,
+                            -45.123928816163264
+                        ],
+                        [
+                            169.45312499999997,
+                            -44.48474943661996
+                        ],
+                        [
+                            169.6234130859375,
+                            -43.91372326852401
+                        ],
+                        [
+                            171.48010253906247,
+                            -42.859859815062784
+                        ],
+                        [
+                            171.68334960937497,
+                            -42.83569550641452
+                        ],
+                        [
+                            172.7105712890625,
+                            -42.026853887189816
+                        ],
+                        [
+                            173.056640625,
+                            -42.37477836111418
+                        ],
+                        [
+                            173.74877929687503,
+                            -41.87365126992504
+                        ],
+                        [
+                            174.12231445312503,
+                            -41.90023276842022
+                        ],
+                        [
+                            173.1884765625,
+                            -43.92954993561458
+                        ],
+                        [
+                            171.13952636718753,
+                            -44.97257068224063
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 22,
+                "name": "Otago",
+                "slug": "otago",
+                "uniq": "Region-22",
+                "type": "region",
+                "tasId": "13",
+                "links": [
+                    {
+                        "label": "Traffic dashboard",
+                        "url": "\/regions\/otago\/traffic-dashboard",
+                        "isSpaRoute": true,
+                        "isExtRoute": false,
+                        "icon": "dashboard"
+                    },
+                    {
+                        "label": "X (Twitter)",
+                        "url": "https:\/\/twitter.com\/nztaos",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "twitter-outline"
+                    },
+                    {
+                        "label": "Facebook",
+                        "url": "https:\/\/www.facebook.com\/nztaos",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "facebook-outline"
+                    },
+                    {
+                        "label": "Traffic news bulletins",
+                        "url": "https:\/\/www.journeys.nzta.govt.nz\/traffic-bulletins?Region=Otago",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "holiday-journeys"
+                    }
+                ],
+                "config": {
+                    "enableHolidayJourneys": 0,
+                    "enableTrafficDashboard": 0,
+                    "hideHolidaysInMap": 1,
+                    "hideRoadworksInMap": 0,
+                    "hideRoadClosuresInMap": 0,
+                    "hideWarningsInMap": 0,
+                    "hideHazardsInMap": 0,
+                    "hideEventsInMap": 0,
+                    "hideNewsInMap": 0
+                },
+                "bannerConfig": {
+                    "useManualBannerEvent": 0,
+                    "bannerEventTitle": "With the Ed Sheeran Concerts, Warbirds over Wanaka and other holiday traffic expect delays wherever you go across the South Island this Easter weekend. Allow plenty of time \u2013 plan ahead and make your journey part of the fun.",
+                    "bannerEventImpact": "Easter Weekend",
+                    "bannerEventURL": "http:\/\/www.journeys.nzta.govt.nz\/christchurch\/traffic-update\/698536",
+                    "bannerEventID": 0
+                },
+                "parentRegion": "northland",
+                "parentRegionId": null,
+                "weatherLocation": "Dunedin",
+                "publishedPage": true
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            168.94775390625,
+                            -45.710015239433716
+                        ],
+                        [
+                            169.0411376953125,
+                            -45.54483149242462
+                        ],
+                        [
+                            168.24462890625,
+                            -45.32897866218557
+                        ],
+                        [
+                            168.0743408203125,
+                            -44.81691551782855
+                        ],
+                        [
+                            168.24462890625,
+                            -44.47691085722324
+                        ],
+                        [
+                            169.7113037109375,
+                            -43.905808356157394
+                        ],
+                        [
+                            169.6893310546875,
+                            -44.56699093657141
+                        ],
+                        [
+                            170.5462646484375,
+                            -44.902577996288855
+                        ],
+                        [
+                            171.2054443359375,
+                            -44.906468717098825
+                        ],
+                        [
+                            170.826416015625,
+                            -45.933960441921585
+                        ],
+                        [
+                            169.19769287109375,
+                            -46.758679967095574
+                        ],
+                        [
+                            168.94775390625,
+                            -45.710015239433716
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 38,
+                "name": "Southland",
+                "slug": "southland",
+                "uniq": "Region-38",
+                "type": "region",
+                "tasId": "14",
+                "links": [
+                    {
+                        "label": "X (Twitter)",
+                        "url": "https:\/\/twitter.com\/nztaos",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "twitter-outline"
+                    },
+                    {
+                        "label": "Facebook",
+                        "url": "https:\/\/www.facebook.com\/nztaos",
+                        "isSpaRoute": false,
+                        "isExtRoute": true,
+                        "icon": "facebook-outline"
+                    },
+                    {
+                        "label": "Traffic news bulletins",
+                        "url": "https:\/\/www.journeys.nzta.govt.nz\/traffic-bulletins?Region=Southland",
+                        "isSpaRoute": false,
+                        "isExtRoute": false,
+                        "icon": "holiday-journeys"
+                    }
+                ],
+                "config": {
+                    "enableHolidayJourneys": 0,
+                    "enableTrafficDashboard": 0,
+                    "hideHolidaysInMap": 1,
+                    "hideRoadworksInMap": 0,
+                    "hideRoadClosuresInMap": 0,
+                    "hideWarningsInMap": 0,
+                    "hideHazardsInMap": 0,
+                    "hideEventsInMap": 0,
+                    "hideNewsInMap": 0
+                },
+                "bannerConfig": {
+                    "useManualBannerEvent": 0,
+                    "bannerEventTitle": null,
+                    "bannerEventImpact": null,
+                    "bannerEventURL": null,
+                    "bannerEventID": 0
+                },
+                "parentRegion": "northland",
+                "parentRegionId": null,
+                "weatherLocation": "Invercargill",
+                "publishedPage": true
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            169.354248046875,
+                            -46.85643476348695
+                        ],
+                        [
+                            167.3876953125,
+                            -47.4578085307503
+                        ],
+                        [
+                            166.2451171875,
+                            -45.81348649679971
+                        ],
+                        [
+                            166.8603515625,
+                            -45.01141864227727
+                        ],
+                        [
+                            168.03314208984375,
+                            -44.190082025040525
+                        ],
+                        [
+                            168.4039306640625,
+                            -44.26487115110198
+                        ],
+                        [
+                            168.233642578125,
+                            -44.966741217055315
+                        ],
+                        [
+                            169.2388916015625,
+                            -45.33284041773059
+                        ],
+                        [
+                            169.16288237173544,
+                            -46.11739116735939
+                        ],
+                        [
+                            169.21966552734372,
+                            -46.29191774991381
+                        ],
+                        [
+                            169.354248046875,
+                            -46.85643476348695
+                        ]
+                    ]
+                ]
+            }
+        }
+    ],
+    "lastUpdated": 1745977984
+}

@@ -116,13 +116,13 @@ fn regex_capture() {
 
 #[test]
 fn parse_regions() {
-    let mut file = File::open("Data/NZ_Regions_LocalGovt.geojson").expect("should pass");
+    let mut file = File::open("fixtures/regions.json").expect("should pass");
     let mut data = String::new();
     file.read_to_string(&mut data).unwrap();
     let geojson = data.as_str().parse::<GeoJson>().unwrap();
     let regions = FeatureCollection::try_from(geojson).unwrap();
-    assert_eq!(regions.features.len(),17);
-    assert_eq!(regions.features[8].property("REGC2023_1").unwrap(),"Wellington Region")
+    assert_eq!(regions.features.len(),15);
+    assert_eq!(regions.features[0].property("name").unwrap(),"Northland")
 }
 #[test]
 fn property_parse2() {
