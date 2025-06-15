@@ -41,7 +41,7 @@ async fn main() {
     //Duration::new(900, 0);
     //Duration::new(lastUpdated)
     let lastupdate = TimeDelta::new(delays["lastUpdated"].as_i64().unwrap(),0).unwrap();
-    let duration = TimeDelta::new(86400, 0).unwrap();
+    let duration = TimeDelta::new(240, 0).unwrap();
     let re = Regex::new(r"SH\s[0-9]+").unwrap();
     //if now sub lastupdated > 300 check for closures with matching properties
     if  now-lastupdate<duration{
