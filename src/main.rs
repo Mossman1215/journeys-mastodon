@@ -41,7 +41,7 @@ async fn main() {
     //Duration::new(900, 0);
     //Duration::new(lastUpdated)
     let lastupdate = TimeDelta::new(delays["lastUpdated"].as_i64().unwrap(),0).unwrap();
-    let duration = TimeDelta::new(240, 0).unwrap();
+    let duration = TimeDelta::new(86400, 0).unwrap();
     let re = Regex::new(r"SH\s[0-9]+").unwrap();
     //if now sub lastupdated > 300 check for closures with matching properties
     if  now-lastupdate<duration{
@@ -71,15 +71,18 @@ async fn main() {
                         }
                     }
                 }
-                let message = format!("{}\n{}\nLast Updated: {}\n{} {}",
+                let island_hash = String::from_str("#").unwrap()+feature["properties"].as_object().unwrap()["EventIsland"].as_str().unwrap().replace(" ", "").as_str();
+                let message = format!("{}\n{}\nLast Updated: {}\n{} {} {}",
                     feature["properties"].as_object().unwrap()["Name"].as_str().unwrap(),
                     feature["properties"].as_object().unwrap()["EventComments"].as_str().unwrap(),
                     feature["properties"].as_object().unwrap()["LastUpdatedNice"].as_str().unwrap(),
                     highway_hash,
-                    region_hash
+                    region_hash,
+                    island_hash
                 );
                 let mut map = HashMap::new();
                 println!("sending message to mastodon");
+                // println!("prospective message: {}", message);
                 map.insert("status", message.as_str());
                 map.insert("visibility", "public");
                 let client = reqwest::Client::new();
