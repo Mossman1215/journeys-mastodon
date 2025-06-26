@@ -66,7 +66,7 @@ async fn main() {
                 if regions_delay.len() > 0 {
                     for region in  regions.features.as_slice(){
                         if regions_delay.contains(&region.property("id").unwrap().as_i64().unwrap_or_default()) {
-                            let region_str = format!("#{} ",region.property("name").unwrap().as_str().unwrap().replace("-", ""));
+                            let region_str = format!("#{} ",region.property("name").unwrap().as_str().unwrap().replace("-", "").replace(" ", ""));
                             region_hash.push_str(region_str.as_str());
                         }
                     }
