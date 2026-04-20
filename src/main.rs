@@ -55,45 +55,47 @@ async fn main() {
             for i in 0..regions_raw.len() {
                 regions_delay.push(regions_raw[i].as_i64().unwrap_or_default());
             }
-            if desc == "Crash" && now - last_edit_stamp<duration && now - last_update_stamp<duration{
-                let m = re.find(feature["properties"].as_object().unwrap()["LocationArea"].as_str().unwrap());
-                let mut highway_hash = String::from_str("").unwrap();
-                match m {
-                    None => println!("no highway type found"),
-                    Some(m) => highway_hash = (String::from_str("#").unwrap()+m.as_str()).replace(" ", ""),
-                }
-                let mut region_hash = String::new();
-                if regions_delay.len() > 0 {
-                    for region in  regions.features.as_slice(){
-                        if regions_delay.contains(&region.property("id").unwrap().as_i64().unwrap_or_default()) {
-                            let region_str = format!("#{} ",region.property("name").unwrap().as_str().unwrap().replace("-", "").replace(" ", ""));
-                            region_hash.push_str(region_str.as_str());
+            if desc == "Crash" || desc == "Flooding" || desc == "Slip"{
+                if now - last_edit_stamp<duration && now - last_update_stamp<duration{
+                    let m = re.find(feature["properties"].as_object().unwrap()["LocationArea"].as_str().unwrap());
+                    let mut highway_hash = String::from_str("").unwrap();
+                    match m {
+                        None => println!("no highway type found"),
+                        Some(m) => highway_hash = (String::from_str("#").unwrap()+m.as_str()).replace(" ", ""),
+                    }
+                    let mut region_hash = String::new();
+                    if regions_delay.len() > 0 {
+                        for region in  regions.features.as_slice(){
+                            if regions_delay.contains(&region.property("id").unwrap().as_i64().unwrap_or_default()) {
+                                let region_str = format!("#{} ",region.property("name").unwrap().as_str().unwrap().replace("-", "").replace(" ", ""));
+                                region_hash.push_str(region_str.as_str());
+                            }
                         }
                     }
-                }
-                let island_hash = String::from_str("#").unwrap()+feature["properties"].as_object().unwrap()["EventIsland"].as_str().unwrap().replace(" ", "").as_str();
-                let message = format!("{}\n{}\nLast Updated: {}\n{} {} {}",
-                    feature["properties"].as_object().unwrap()["Name"].as_str().unwrap(),
-                    feature["properties"].as_object().unwrap()["EventComments"].as_str().unwrap(),
-                    feature["properties"].as_object().unwrap()["LastUpdatedNice"].as_str().unwrap(),
-                    highway_hash,
-                    region_hash,
-                    island_hash
-                );
-                let mut map = HashMap::new();
-                println!("sending message to mastodon");
-                // println!("prospective message: {}", message);
-                map.insert("status", message.as_str());
-                map.insert("visibility", "public");
-                let client = reqwest::Client::new();
-                let res2 = client.post("https://g2s.mountainmoss.nz/api/v1/statuses")
-                    .bearer_auth(auth_token.access_token.clone())
-                    .header("User-Agent", "journeys-mastodon")
-                    .json(&map)
-                    .send()
-                    .await.unwrap();
-                if res2.status() != 200 {
-                    println!("error happened: {},{}",res2.status(),res2.text().await.unwrap())
+                    let island_hash = String::from_str("#").unwrap()+feature["properties"].as_object().unwrap()["EventIsland"].as_str().unwrap().replace(" ", "").as_str();
+                    let message = format!("{}\n{}\nLast Updated: {}\n{} {} {}",
+                        feature["properties"].as_object().unwrap()["Name"].as_str().unwrap(),
+                        feature["properties"].as_object().unwrap()["EventComments"].as_str().unwrap(),
+                        feature["properties"].as_object().unwrap()["LastUpdatedNice"].as_str().unwrap(),
+                        highway_hash,
+                        region_hash,
+                        island_hash
+                    );
+                    let mut map = HashMap::new();
+                    println!("sending message to mastodon");
+                    // println!("prospective message: {}", message);
+                    map.insert("status", message.as_str());
+                    map.insert("visibility", "public");
+                    let client = reqwest::Client::new();
+                    let res2 = client.post("https://g2s.mountainmoss.nz/api/v1/statuses")
+                        .bearer_auth(auth_token.access_token.clone())
+                        .header("User-Agent", "journeys-mastodon")
+                        .json(&map)
+                        .send()
+                        .await.unwrap();
+                    if res2.status() != 200 {
+                        println!("error happened: {},{}",res2.status(),res2.text().await.unwrap())
+                    }
                 }
             }
         }
