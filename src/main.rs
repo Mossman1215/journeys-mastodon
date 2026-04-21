@@ -48,7 +48,7 @@ async fn main() {
         for feature in delays["features"].as_array().unwrap() {
             let desc = feature["properties"].as_object().unwrap()["EventDescription"].as_str().unwrap();
             let last_edit_time = NaiveDateTime::parse_from_str( feature["properties"].as_object().unwrap()["LastEdited"].as_str().unwrap(),"%Y-%m-%d %H:%M:%S").unwrap();
-            let last_edit_stamp = TimeDelta::new(last_edit_time.and_local_timezone(FixedOffset::east_opt(12*3600).unwrap()).unwrap().timestamp(),0).unwrap();
+            let last_edit_stamp = TimeDelta::new(last_edit_time.and_local_timezone(FixedOffset::east_opt(6*3600).unwrap()).unwrap().timestamp(),0).unwrap();
             let last_update_stamp = TimeDelta::new(feature["properties"].as_object().unwrap()["lastUpdated"].as_i64().unwrap(), 0).unwrap();
             let regions_raw = feature["properties"].as_object().unwrap()["regions"].as_array().unwrap();
             let mut regions_delay  = Vec::new();
@@ -72,7 +72,7 @@ async fn main() {
                             }
                         }
                     }
-                    let island_hash = String::from_str("#").unwrap()+feature["properties"].as_object().unwrap()["EventIsland"].as_str().unwrap().replace(" ", "").as_str();
+                    let island_hash = String::from_str("#").unwrap()+feature["properties"].as_object().unwrap()["EventIsland"].as_str().unwrap().replace(" ", "").as_str().replace("'","").as_str();
                     let message = format!("{}\n{}\nLast Updated: {}\n{} {} {}",
                         feature["properties"].as_object().unwrap()["Name"].as_str().unwrap(),
                         feature["properties"].as_object().unwrap()["EventComments"].as_str().unwrap(),
