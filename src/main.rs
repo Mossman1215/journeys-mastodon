@@ -55,7 +55,8 @@ async fn main() {
             for i in 0..regions_raw.len() {
                 regions_delay.push(regions_raw[i].as_i64().unwrap_or_default());
             }
-            if desc == "Crash" || desc == "Flooding" || desc == "Slip"{
+	    //|| desc == "Flooding" || desc == "Slip"
+            if desc == "Crash" {
                 if now - last_edit_stamp<duration && now - last_update_stamp<duration{
                     let m = re.find(feature["properties"].as_object().unwrap()["LocationArea"].as_str().unwrap());
                     let mut highway_hash = String::from_str("").unwrap();
@@ -67,13 +68,13 @@ async fn main() {
                     if regions_delay.len() > 0 {
                         for region in  regions.features.as_slice(){
                             if regions_delay.contains(&region.property("id").unwrap().as_i64().unwrap_or_default()) {
-                                let region_str = format!("#{} ",region.property("name").unwrap().as_str().unwrap().replace("-", "").replace(" ", "")).replace("'","");
+                                let region_str = format!("#{} ",region.property("name").unwrap().as_str().unwrap().replace("-", "").replace(" ", "")).replace("’","");
                                 region_hash.push_str(region_str.as_str());
                             }
                         }
                     }
                     let island_hash = String::from_str("#").unwrap()+feature["properties"].as_object().unwrap()["EventIsland"].as_str().unwrap().replace(" ", "").as_str();
-		    let incident_hash = format!("#{}",desc)
+		    let incident_hash = format!("#{}",desc);
 		    let message = format!("{}\n{}\nLast Updated: {}\n{} {} {} {}",
                         feature["properties"].as_object().unwrap()["Name"].as_str().unwrap(),
                         feature["properties"].as_object().unwrap()["EventComments"].as_str().unwrap(),
